@@ -1,0 +1,3 @@
+# Los binarios van en los releases, no en el historial.
+*.bin
+firmware.json
