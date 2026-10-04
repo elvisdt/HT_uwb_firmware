@@ -1,5 +1,12 @@
 # HT UWB — firmware
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WeActStudio/WeActStudio.CAN485DevBoardV1_ESP32/master/Images/1_new.png"
+       alt="WeAct Studio CAN485 DevBoard V1.1" width="640">
+  <br><sub>Placa: WeAct Studio CAN485 DevBoard V1.1 (ESP32-D0WD-V3, 8 MB). Imagen de
+  <a href="https://github.com/WeActStudio/WeActStudio.CAN485DevBoardV1_ESP32">WeAct Studio</a>.</sub>
+</p>
+
 Binarios publicados del firmware del dispositivo HT UWB (ESP32 en WeAct
 CAN485, enlace BLE ↔ RS485 con el equipo UWB). La app **HT UWB LINK** busca
 acá las actualizaciones (*Dispositivo → Actualizar firmware*).
