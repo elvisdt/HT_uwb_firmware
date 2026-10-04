@@ -1,7 +1,8 @@
 # HT UWB — firmware
 
-Binarios publicados del firmware del dispositivo HT UWB (ESP32, puente
-BLE ↔ RS485). La app **HT UWB LINK** busca acá las actualizaciones.
+Binarios publicados del firmware del dispositivo HT UWB (ESP32 en WeAct
+CAN485, enlace BLE ↔ RS485 con el equipo UWB). La app **HT UWB LINK** busca
+acá las actualizaciones (*Dispositivo → Actualizar firmware*).
 
 Este repo no tiene código: cada versión es un **release** con dos archivos.
 
@@ -27,7 +28,7 @@ En el repo del código (privado):
 cd HT_uwb_rs485
 # subir PROJECT_VER y FW_BUILD en CMakeLists.txt
 idf.py build
-tools/fw_manifest.py          # genera build/firmware.json
+tools/fw_manifest.py          # genera build/firmware.json y archiva la versión en dist/
 ```
 
 En este repo: **Releases → Draft a new release**
@@ -38,3 +39,6 @@ En este repo: **Releases → Draft a new release**
 - Release label: **None** (un pre-release no cuenta como último)
 
 Los `.bin` no se guardan en el historial de git: van solo en los releases.
+
+El `.elf` (símbolos, sirve para leer un core dump) **no** va acá: se sube al
+release del repo privado del código.
